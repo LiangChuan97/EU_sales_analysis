@@ -13,7 +13,7 @@ Goal 3: Identify high-value customer segments and regions to target marketing ca
 
 
 ***
-**Methodology:** Data was sourced from <a href = "https://public.tableau.com/app/learn/sample-data">tableau sample dataset </a>, cleaned and transformed using SQL. Exploratory data analysis was performed to identify trends and correlations. An interactive dashboard was then developed in tableau to present key findings.
+**Methodology:** Data was sourced from <a href = "https://public.tableau.com/app/learn/sample-data">tableau  </a>, cleaned and transformed using SQL. Exploratory data analysis was performed to identify trends and correlations. An interactive dashboard was then developed in tableau to present key findings.
 ***
 **Key Findings and Recommendations:** <p>
 <img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/66e2a242-8b11-40c4-b899-5518fc659260" />
