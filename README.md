@@ -6,7 +6,7 @@ Goal 2: Analyze shipping delays and their impact on returns and profitability to
 Goal 3: Identify high-value customer segments and regions to target marketing campaigns effectively and maximize revenue.<p>
 
 ***
-**Problem:** 
+**Problems:** 
 1. Some products or categories have high sales but low profit or even losses due to discounts or returns.<p>
 2. Shipments that took longer than expected may affect customer satisfaction and increase returns.<p>
 3. Certain customer segments or regions generate higher revenue or profit.<br>
