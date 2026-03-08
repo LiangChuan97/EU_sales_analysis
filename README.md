@@ -36,7 +36,7 @@ Key Highlights:
 - [Business Problem](#-business-problem)
 - [Dataset](#-dataset)
 - [Methodology](#-methodology) 
-- [Key Insights](#-key-insights)
+- [Key Insights and Recommendations](#-key-insights-and-recommendations)
 - [Key Results](#-key-results)
 - [Business Value](#-business-value)
 - [Tech Stack](#-tech-stack)
@@ -100,7 +100,7 @@ Explored relationships between:
 
 An interactive Tableau dashboard was developed to present insights and support data-driven decision making.
 
-## 📊 Key Insights
+## 📊 Key Insights and Recommendations
 
 <h2 align="center">💰 Product Profitability Analysis
 </h2>
