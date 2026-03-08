@@ -176,7 +176,7 @@ Offer Standard Class as default, but promote First Class upgrades for premium or
 
 Use targeted campaigns emphasizing speed vs cost trade-offs to improve margin.<p>
 
-<h2 align="center">👥 Customer Segmentation Analysis
+<h2 align="center">👥 Customer Segmentation Analysis </h2>
 
 <p align="center"><img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/6c38fcca-09e5-4660-9a7b-d627316eeb63" />
 
