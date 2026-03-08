@@ -1,100 +1,242 @@
-### EU sales analysis ###
-***
-This dataset captures detailed transactional and customer information, including order details, product data, customer segmentation, shipping, and financial metrics such as sales, profit, and returns. By exploring these insights, data analysts can make informed, data-driven decisions, similar to the strategic analyses performed in companies, where understanding customer behavior and revenue drivers is key to growth.
-<p>Goal 1: To identify low-profit products and categories to optimize pricing, discounting, and inventory decisions.<p>
-Goal 2: Analyze shipping delays and their impact on returns and profitability to improve logistics and fulfillment efficiency.<p>
-Goal 3: Identify high-value customer segments and regions to target marketing campaigns effectively and maximize revenue.<p>
-
-***
-**Problems:** 
-1. Some products or categories have high sales but low profit or even losses due to discounts or returns.<p>
-2. Shipments that took longer than expected may affect customer satisfaction and increase returns.<p>
-3. Certain customer segments or regions generate higher revenue or profit.<br>
+<h1 align="center"> 💰 EU Sales Analysis using SQL and Tableau</h1>
 
 
-***
-**Methodology:** Data was sourced from <a href = "https://public.tableau.com/app/learn/sample-data">tableau  </a>, cleaned and transformed using SQL. Exploratory data analysis was performed to identify trends and correlations. An interactive dashboard was then developed in tableau to present key findings.
-***
-**Key Findings and Recommendations:** <p>
-<img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/66e2a242-8b11-40c4-b899-5518fc659260" />
+<p align="center">
+<img src="https://img.shields.io/badge/Tool-SQL-blue">
+<img src="https://img.shields.io/badge/Dashboard-Tableau-orange">
+<img src="https://img.shields.io/badge/Domain-Sales%20Analytics-green">
+</p>
+
+## 🚀 Project Summary
+
+This project analyzes EU transactional sales data to identify key drivers of product profitability, shipping performance, and customer behavior. Using SQL for data preparation and Tableau for visualization, the analysis uncovers operational inefficiencies and revenue opportunities to support data-driven business decisions in pricing, logistics, and marketing strategy.
+
+Key Highlights:
+- Analyzed EU transactional sales data to evaluate product performance, shipping efficiency, and customer purchasing patterns.
+- Conducted exploratory data analysis to identify profit drivers, discount impacts, and regional sales trends.
+- Identified high-sales but loss-making products caused by excessive discounting and pricing below cost.
+- Evaluated shipping methods and discovered that Standard Class shipping generates the highest overall profit, despite longer delivery times.
+- Segmented customers into high-, medium-, and low-value groups, revealing that high-value customers contribute the majority of overall profit.
+- Provided data-driven recommendations to optimize pricing strategies, logistics operations, and targeted marketing campaigns.
+- Developed an interactive Tableau dashboard enabling stakeholders to explore sales trends, product performance, shipping efficiency, and customer segmentation.
+
+## 🧠 Skills Demonstrated
+
+- SQL Data Cleaning & Transformation
+- Exploratory Data Analysis (EDA)
+- Business Intelligence & Data Visualization
+- Profitability Analysis
+- Customer Segmentation
+- Logistics Performance Analysis
+- Data Storytelling
+
+## 📑 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Business Problem](#-business-problem)
+- [Dataset](#-dataset)
+- [Methodology](#-methodology) 
+- [Key Insights](#-key-insights)
+- [Key Results](#-key-results)
+- [Business Value](#-business-value)
+- [Tech Stack](#-tech-stack)
+- [Conclusion](#-conclusion)
 
 
+## 📌 Project Overview
 
+This project analyzes transactional sales data to identify key drivers of profitability, customer behavior, and operational performance.
 
+The dataset contains detailed information on orders, products, customers, shipping, sales, profit, and returns. By examining these variables, the analysis uncovers patterns that help businesses improve pricing strategies, logistics efficiency, and customer targeting.
 
+The project includes:
+- Exploratory data analysis to identify revenue and profit drivers
+- Product-level profitability analysis
+- Shipping performance evaluation across regions and delivery modes
+- Customer segmentation analysis to identify high-value customers
+- Interactive Tableau dashboard to visualize insights and support decision-making
 
-1) Products like Cubify CubeX 3D Printer Double Head Print and Lexmark MX611dhe Monochrome Laser Printer show large sales volumes (>$10K) but extremely high negative profits (up to -$8,879).<p>
-2) Discounts as high as 1.6× (160%) suggest major over-discounting or pricing below cost.<p>
-3) All categories (Technology, Furniture, Office Supplies) include products with high total sales yet negative profits — meaning revenue growth doesn’t equal profitability.<p>
-4) Discounting appears to be the strongest driver of loss, especially when exceeding ~1.5–2%.<p>
+## 🏦 Business Problem
 
-o	Reevaluate Pricing Strategy:<p>
-•	Conduct a cost-based review of top-selling but loss-making products.<p>
-•	Implement minimum margin pricing rules to prevent selling below cost.<p>
+Companies often face challenges such as:
+	•	High sales products generating low or negative profit
+	•	Shipping delays impacting customer satisfaction and return rates
+	•	Difficulty identifying high-value customer segments
 
-o	Optimize Product Mix:<p>
-• Gradually phase out or renegotiate supplier costs for persistently unprofitable items.p>
+The objective of this analysis is to generate insights that help businesses:
+	•	Improve pricing and discount strategies
+	•	Optimize shipping methods and logistics efficiency
+	•	Target marketing campaigns toward the most profitable customers
 
+## 🗂 Dataset
 
-<img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/8ab1d0ff-7b8a-4914-9c97-0e9a37a1bda5" />
+The dataset contains transactional sales data including:
+- Order details
+- Product information
+- Customer segments
+- Shipping methods
+- Financial metrics such as sales, profit, discounts, and returns
 
+which was sourced from <a href = "https://public.tableau.com/app/learn/sample-data">kaggle.</a>
 
+## ⚙️ Methodology
 
+The analysis workflow included:
 
-5) Standard Class dominates both sales and average shipping time.<p>
-• Highest average shipping days (≈5 days) and highest total profit across all regions (especially East and West).<p>
-• Suggests it’s the most commonly used and profitable shipping option, even with slower delivery.<p>
+1. Data Cleaning and Preparation
+- Data extracted and transformed using SQL
+- Checked for inconsistencies and missing values
+- Prepared datasets for analysis
 
-6) Second Class performs moderately well.<p>
-• Average shipping time around 3.2–3.3 days, with steady profits across regions.<p>
-• West region shows the highest profit (≈22K), implying stronger demand or better operational efficiency there.<p>
+2. Exploratory Data Analysis
 
-7) First Class has faster delivery but lower profit.<p>
-• Average shipping around 2.1–2.3 days, but total profit is much lower (between 3K–22K).
-• Suggests high delivery costs reduce profitability despite speed.
+Explored relationships between:	
+- Sales vs profit
+- Discounts vs profitability
+- Shipping modes vs delivery times
+- Customer segments vs revenue contribution
 
-8) Same Day delivery is fastest but least profitable.<p>
-• Average shipping near 0 days, but South region records a loss (-1,787).
-• Other regions show minimal profit (≈7K–8K), indicating low margin or high logistics costs for express shipping.
+3. Data Visualization
 
+An interactive Tableau dashboard was developed to present insights and support data-driven decision making.
 
-o	Maintain Standard Class as the default shipping mode:<p>
-•	It delivers the best balance of profit and coverage, even with slightly longer delivery times.<p>
-•	Optimize inventory planning to sustain this mode efficiently.<p>
+## 📊 Key Insights
 
-o	Improve cost efficiency for faster delivery modes:<p>
-•	Review logistics partnerships and delivery pricing for First Class and Same Day options.<p>
-•	Consider minimum order value thresholds for Same Day shipping to cover costs.<p>
+<h2 align="center">💰 Product Profitability Analysis
+</h2>
 
-o	Regional Strategy:<p>
-•	West and East regions consistently outperform in total profit — they could serve as models for operational best practices.<p>
-•	South region needs attention — especially Same Day service, which generates losses.<p>
+<p align="center"><img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/0868745b-5632-4148-8495-80577670498e" />
 
-o	Customer Segmentation Opportunity:<p>
-•	Offer Standard Class as default, but promote First Class upgrades for premium or urgent customers.<p>
-•	Use targeted campaigns emphasizing speed vs cost trade-offs to improve margin.<p>
+Key findings:
+- All categories (Technology, Furniture, Office Supplies) include products with high total sales yet negative profits — meaning revenue growth doesn’t equal profitability.
+- Discounting appears to be the strongest driver of loss, especially when exceeding ~1.5–2%.
+- Discounts reaching 160% suggest extreme over-discounting.
+- Several products generated high sales but significant losses.
 
+Example products:
+- Cubify CubeX 3D Printer Double Head Print
+- Lexmark MX611dhe Monochrome Laser Printer
+- These products recorded negative profits up to -$8,879
 
+Recommendations:
+- Conduct cost-based pricing reviews for high-sales but unprofitable products
+- Introduce minimum margin pricing rules
+- Phase out or renegotiate supplier contracts for persistently loss-making products
 
+<h2 align="center">🚚 Shipping Performance Analysis
+</h2>
 
+<p align="center"><img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/8ab1d0ff-7b8a-4914-9c97-0e9a37a1bda5" />
 
-<img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/6c38fcca-09e5-4660-9a7b-d627316eeb63" />
+Key findings:
 
+Standard Class
+- Most commonly used shipping method
+- Highest overall profit contribution(especially East and West)
+- Longest average delivery time ~5 days
+- Suggests it’s the most commonly used and profitable shipping option, even with slower delivery.<p>
 
-8) For high value customers of 2384 customers, total sales of $1,150,166, total profit of 132,670, avg order value of 2$02.29, these customers drive the bulk of profit. <p>
-9) For medium-value customers of 1402 customers, total sales of $696,605 total profit of $90,366, avg order value of 2$25.46, they are steady revenue contributors. <p>
-10) For low-value customers of 836 customers, total sales of $425,679 total profit of $59,822, avg order value of $223.36, they are ow profit contribution. <p>
+Second Class
+- Moderate delivery time (~3.2 days)
+- Stable profitability across regions
+- West region shows the highest profit (≈22K), implying stronger demand or better operational efficiency there.
 
-o	Offer loyalty perks, VIP promotions, and personalized campaigns to retain and increase spend for high value customers.<p>
-o	Upsell and cross-sell strategically; nurture through targeted campaigns for medium value customers.<p>
-o	Engage with automated or cost-effective promotions; limit heavy resource allocation for low value customers.<p>
+First Class
+- Faster delivery (~2 days)
+- Lower profit margins due to higher logistics costs
 
+Same Day
+- Fastest delivery
+- Lowest profitability
+- Average shipping near 0 days, but South region records a loss (-1,787).
+- Other regions show minimal profit (≈7K–8K), indicating low margin or high logistics costs for express shipping.
 
+Recommendations:
+- Maintain Standard Class as the default shipping mode:
+  
+It delivers the best balance of profit and coverage, even with slightly longer delivery times.
 
+Optimize inventory planning to sustain this mode efficiently.
 
+- Improve cost efficiency for faster delivery modes:
+  
+Review logistics partnerships and delivery pricing for First Class and Same Day options.<p>
 
-***
+Consider minimum order value thresholds for Same Day shipping to cover costs.<p>
 
-**Conclusion:** <p> This analysis provides actionable insights into sales performance, profitability, shipping efficiency, and customer behavior. By identifying low-profit products, pinpointing shipping delays, and segmenting high-value customers, businesses can make data-driven decisions to optimize inventory, enhance customer satisfaction, and target marketing efforts more effectively. Overall, these insights help improve operational efficiency, drive revenue growth, and strengthen customer relationships. 
+- Regional Strategy:
+
+West and East regions consistently outperform in total profit — they could serve as models for operational best practices.
+
+South region needs attention — especially Same Day service, which generates losses.<p>
+
+- Customer Segmentation Opportunity:
+  
+Offer Standard Class as default, but promote First Class upgrades for premium or urgent customers.<p>
+
+Use targeted campaigns emphasizing speed vs cost trade-offs to improve margin.<p>
+
+<h2 align="center">👥 Customer Segmentation Analysis
+
+<p align="center"><img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/6c38fcca-09e5-4660-9a7b-d627316eeb63" />
+
+Customer segments were grouped based on purchase value.
+
+High Value Customers
+- 2,384 customers
+- Total Sales: $1,150,166
+- Total Profit: $132,670
+- Average Order Value: $202
+
+These customers contribute the largest share of profit.
+
+Medium Value Customers
+- 1,402 customers
+- Total Sales: $696,605
+- Total Profit: $90,366
+
+Provide stable revenue contributions.
+
+Low Value Customers
+- 836 customers
+- Total Sales: $425,679
+- Total Profit: $59,822
+
+Lower overall profit contribution.
+
+Recommendations:
+- Retain high-value customers with loyalty rewards and VIP promotions
+- Upsell and cross-sell products to medium-value customers
+- Use automated marketing campaigns for low-value segments to reduce cost
+
+## 🏆 Key Results
+
+- Identified multiple high-revenue products generating **negative profit due to excessive discounting**.  
+- Found that **Standard Class shipping generates the highest profit despite slower delivery times**.  
+- Discovered that **high-value customers contribute the majority of overall profit**.  
+- Developed a Tableau dashboard enabling stakeholders to explore **sales, shipping performance, and customer segmentation interactively**.
+
+## 💡 Business Value
+
+The insights from this analysis help businesses:
+
+- Improve pricing and discount strategies to prevent loss-making products
+- Optimize shipping methods to balance delivery speed and profitability
+- Target marketing campaigns toward high-value customers
+- Improve inventory planning and supplier negotiations
+
+## 🧰 Tech Stack
+
+- 🐍 SQL
+- 📊 Tableau
+- 📈 Data Visualization
+- 📊 Exploratory Data Analysis
+- 📉 Business Intelligence
+
+## 🏁 Conclusion
+
+This project demonstrates how sales data can be leveraged to uncover insights into profitability, logistics performance, and customer behavior.
+
+By identifying loss-making products, analyzing shipping efficiency, and segmenting customers by value, organizations can make data-driven decisions that improve profitability, operational efficiency, and customer engagement.
 
 
