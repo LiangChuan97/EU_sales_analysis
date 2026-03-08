@@ -59,14 +59,14 @@ The project includes:
 ## 🏦 Business Problem
 
 Companies often face challenges such as:
-	•	High sales products generating low or negative profit
-	•	Shipping delays impacting customer satisfaction and return rates
-	•	Difficulty identifying high-value customer segments
+- High sales products generating low or negative profit
+- Shipping delays impacting customer satisfaction and return rates
+- Difficulty identifying high-value customer segments
 
 The objective of this analysis is to generate insights that help businesses:
-	•	Improve pricing and discount strategies
-	•	Optimize shipping methods and logistics efficiency
-	•	Target marketing campaigns toward the most profitable customers
+- Improve pricing and discount strategies
+- Optimize shipping methods and logistics efficiency
+- Target marketing campaigns toward the most profitable customers
 
 ## 🗂 Dataset
 
