@@ -105,7 +105,7 @@ An interactive Tableau dashboard was developed to present insights and support d
 <h2 align="center">💰 Product Profitability Analysis
 </h2>
 
-<p align="center"><img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/0868745b-5632-4148-8495-80577670498e" />
+<p align="center"><img width="1016" height="821" alt="image" src="https://github.com/user-attachments/assets/0868745b-5632-4148-8495-80577670498e" />
 
 Key findings:
 - All categories (Technology, Furniture, Office Supplies) include products with high total sales yet negative profits — meaning revenue growth doesn’t equal profitability.
@@ -126,7 +126,7 @@ Recommendations:
 <h2 align="center">🚚 Shipping Performance Analysis
 </h2>
 
-<p align="center"><img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/8ab1d0ff-7b8a-4914-9c97-0e9a37a1bda5" />
+<p align="center"><img width="1016" height="821" alt="image" src="https://github.com/user-attachments/assets/8ab1d0ff-7b8a-4914-9c97-0e9a37a1bda5" />
 
 Key findings:
 
@@ -178,7 +178,7 @@ Use targeted campaigns emphasizing speed vs cost trade-offs to improve margin.<p
 
 <h2 align="center">👥 Customer Segmentation Analysis </h2>
 
-<p align="center"><img width="656" height="830" alt="image" src="https://github.com/user-attachments/assets/6c38fcca-09e5-4660-9a7b-d627316eeb63" />
+<p align="center"><img width="1016" height="821" alt="image" src="https://github.com/user-attachments/assets/6c38fcca-09e5-4660-9a7b-d627316eeb63" />
 
 Customer segments were grouped based on purchase value.
 
